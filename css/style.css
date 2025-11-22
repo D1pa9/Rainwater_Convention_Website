@@ -1,0 +1,151 @@
+
+/* custom styles on top of Tailwind */
+:root {
+  --primary: #0077C8; 
+  --accent: #3a38b4;  
+}
+
+/* override for header background using Tailwind utility class fallback */
+.bg-primary { background-color: var(--primary); }
+.text-primary { color: var(--primary); }
+
+/* buttons */
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  padding: 0.65rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.btn-primary:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.18); }
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  padding: 0.55rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* NAVBAR LINK ANIMATIONS */
+.nav-link-modern, 
+ul li a.bg-primary {  
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Underline animation for text links */
+.nav-link-modern::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 2px;
+  width: 0%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+  transform: translateX(-50%);
+}
+
+.nav-link-modern:hover::after {
+  width: 100%;
+}
+
+.nav-link-modern:hover {
+  color: var(--accent);
+  transform: scale(1.05);
+}
+
+.nav-link-modern:active {
+  transform: scale(0.95);
+  color: var(--primary);
+}
+
+/* Register button hover */
+ul li a.bg-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+ul li a.bg-primary:active {
+  transform: scale(0.95);
+}
+
+/* Optional ripple effect for clicks on nav bars */
+.nav-link-modern::before,
+ul li a.bg-primary::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+  z-index: -1;
+}
+.nav-link-modern:active::before,
+ul li a.bg-primary:active::before {
+  width: 200%;
+  height: 500%;
+  transition: 0s;
+}
+
+
+/* small components */
+.faq-card, .highlight-card {
+  background: white;
+  padding: 1rem;
+  border-radius: .75rem;
+  box-shadow: 0 6px 18px rgba(30,41,59,0.06);
+  font-weight: 600;
+}
+
+/* form inputs style */
+.input-field {
+  width: 100%;
+  padding: .6rem .8rem;
+  border-radius: .5rem;
+  border: 1px solid #e3e7ee;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-a.open {
+  max-height: 500px; /* enough space for the user to write answer */
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.footer-link {
+  color: #d1d5db;
+  transition: color .25s ease;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}
+
+
+/* small responsive changes */
+@media (max-width: 640px) {
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+}

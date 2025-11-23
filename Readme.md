@@ -13,6 +13,7 @@ This is a 4-page Rainwater Convention website (Home, FAQs, Register, Admin) buil
 - MySQL (database)
 - Figma for UI/UX prototype (Link in figma_link.txt)
 
+
 ## How to Run
 1. Install XAMPP (To run the website locally)
 2. Copy project folder to `C:\xampp\htdocs\`
@@ -26,6 +27,7 @@ This is a 4-page Rainwater Convention website (Home, FAQs, Register, Admin) buil
 
 ## Pages
 - Home: `index.php`
+- <img width="1366" height="768" alt="Homepage1" src="https://github.com/user-attachments/assets/331a18ba-0e3b-4b1f-be7f-952e8c91f96f" />
 - FAQ: `faq.php`
 - Registration: `register.php`
 - Admin Portal: `admin.php`

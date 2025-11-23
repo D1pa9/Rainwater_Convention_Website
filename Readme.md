@@ -1,10 +1,17 @@
 # Assignment1_Rainwater Convention Website
 
 This is a 4-page Rainwater Convention website (Home, FAQs, Register, Admin) built with HTML/CSS/JS (Tailwind CDN + AOS) and PHP + MySQL (XAMPP). The site includes registration form with validation and an admin portal (Requires username and password for login) to view/delete participants.
+## Features
+- Home page with event overview  
+- FAQs page  
+- Participant registration form  
+- Admin dashboard to view & delete participants  
+- PHP + MySQL backend  
+- Server-side validation  
 
 ## Tools & Frameworks
 - Windows 10 (local dev)
-- XAMPP (Apache, MySQL, PHP)
+- XAMPP (Apache, MySQL, PHP) is for local host
 - Visual Studio Code (editor)
 - Tailwind CSS (via CDN)
 - JavaScript
@@ -12,18 +19,21 @@ This is a 4-page Rainwater Convention website (Home, FAQs, Register, Admin) buil
 - AOS (Animate on Scroll) via CDN
 - MySQL (database)
 - Figma for UI/UX prototype (Link in figma_link.txt)
-
+- Hosting (Infinityfree) for live preview only 
 
 ## How to Run
 1. Install XAMPP (To run the website locally)
-2. Copy project folder to `C:\xampp\htdocs\`
+2. Copy project folder named Assignment1_Rainwater_Convention_website to `C:\xampp\htdocs\`
 3. Start Apache & MySQL by opening xampp 
    (see the port no in xampp (my port no is 3307) and specify the same on the respective files like db_connect.php)
 4. open http://localhost/phpmyadmin in browser
-5. Create database `rainwater.db` and table `participants`
-6. Open browser and see your project by providing URL of project with localhost: 
-    `http://localhost/Asssignment1_RainwaterWebsite/index.php`
-
+5. Create MySQL DB `rainwater_db`  and table `participants`
+6. Import table or create manually  
+7. Start Apache + MySQL  
+8. Open browser and see your project by providing URL of project with localhost: 
+    `http://localhost/Asssignment1_RainwaterWebsite/index.php` // Homepage
+   To see the Admin Page
+   `http://localhost/Asssignment1_RainwaterWebsite/Admin.php` similarly .../Register.php, FAQ.php
 
 ## Pages
 - Home: `index.php`
@@ -85,4 +95,6 @@ Every change you make in VS Code can be saved, then refreshed in the browser to 
 
 Links:
 Figma Link :https://www.figma.com/proto/yy1kchMMSRfFNXwexdCy1u/Rainwater-Convention-Website-Final-Prototype?node-id=0-1&t=pQnKsU8xISP7KRpN-1
+
+To make the project accessible without local setup, a free InfinityFree hosting environment was used.
 Live preview Link : https://rainwater2025.rf.gd/

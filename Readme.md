@@ -27,16 +27,31 @@ This is a 4-page Rainwater Convention website (Home, FAQs, Register, Admin) buil
 
 ## Pages
 - Home: `index.php`
-- <img width="1366" height="768" alt="Homepage1" src="https://github.com/user-attachments/assets/331a18ba-0e3b-4b1f-be7f-952e8c91f96f" />
-- FAQ: `faq.php`
-- Registration: `register.php`
-- Admin Portal: `admin.php`
+  
+   <img width="400" height="768" alt="Homepage1" src="https://github.com/user-attachments/assets/331a18ba-0e3b-4b1f-be7f-952e8c91f96f" />
 
+   <img width="400" height="677" alt="Homepage2" src="https://github.com/user-attachments/assets/0f84a696-b6f1-486b-8ed0-69fbe0d89505" />
+
+   <img width="400" height="685" alt="Homepage3" src="https://github.com/user-attachments/assets/7072787a-882d-430b-843c-881f9a196a2c" />
+
+- FAQ: `faq.php`
+
+  <img width="400" height="650" alt="FAQ" src="https://github.com/user-attachments/assets/543a1977-1cb2-47ea-9f31-624b55700172" />
+
+- Admin Portal: `admin.php`
+  
+  <img width="400" height="656" alt="AdminPage" src="https://github.com/user-attachments/assets/92646c06-fb21-4bc8-a44a-f6a306608f27" />
+
+- Registration: `register.php`
+ 
+  <img width="400" height="650" alt="Registration" src="https://github.com/user-attachments/assets/cdb30b61-79e5-4dbc-8327-4cef570ed568" />
 
 ## For Admin Portal Login :
    Username : admin
    Password : Rainwater2025!
- 
+   
+ <img width="400" height="637" alt="SignUpData" src="https://github.com/user-attachments/assets/b3560b79-21f1-4c80-a174-a78de1858123" />
+
 After a Participent register in the registation page 
 The details of every participent signed up :
 Fullname,Email,Organization,Phone 

@@ -83,3 +83,6 @@ http://localhost/Assignment1_RainwaterWebsite/index.php
 
 Every change you make in VS Code can be saved, then refreshed in the browser to see it live.
 
+Links:
+Figma Link :https://www.figma.com/proto/yy1kchMMSRfFNXwexdCy1u/Rainwater-Convention-Website-Final-Prototype?node-id=0-1&t=pQnKsU8xISP7KRpN-1
+Live preview Link : https://rainwater2025.rf.gd/
